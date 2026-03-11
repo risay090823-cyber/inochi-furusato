@@ -1,0 +1,227 @@
+<!doctype html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="Description" content="ここに説明文を入れる">
+<meta name="viewport" content="width=device-width">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+<title>命のふるさとホームページ</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="jquery/bxslider/jquery.bxslider.css" rel="stylesheet"/>
+<link href="css/style2.css" rel="stylesheet" type="text/css">
+</head>
+	
+<body>
+	<header>
+		<div id="headerinner">
+			<div id="logo">
+				<h1>命のふるさと</h1>
+      </div>
+			<div class="pc_headersub">
+				<div id="headerbutton1">
+				<img src="common/images/header_button1.png.png" alt="お問い合わせ電話番号">
+				</div>
+				<div id="headerbutton2">
+				<a href="login.html"><img src="common/images/header_button2.png.png"
+		    alt="ログイン・会員登録"></a>
+				</div>
+			</div>
+		</div>
+		
+		<nav id="gnavi">
+		 <ul>
+		 <a class="gnavilink" href="#"><li>初めての方</li></a>
+		 <a class="gnavilink" href="#"><li>探す</li></a>
+		 <a class="gnavilink" href="#"><li>イベント</li></a>
+		 <a class="gnavilink" href="#"><li>ニュース</li></a>
+		 <a class="gnavilink" href="#"><li>Q＆A</li></a>
+		</ul>
+		</nav>
+ 	</header>
+  <main>
+		<div id="topphoto">
+			<img src="images/main.jpg.jpg" alt="トップページメイン画像">
+			<h1 id="copyright">
+			かけがえのない命を<br>
+			“私たちができること”で救おう
+			</h1>
+			<a href="#"><img src="images/main_button.png.png" alt="命のふるさととは？" id="pc_mainbtn"></a>
+			
+		</div>
+		
+		<section id="select">
+			<h2><img class="menulogo" src="images/select_title.png.png" alt="支援方法を選ぶ"></h2>
+			<ul id="selectmenu">
+			<li><img src="images/select_menu1.png.png" alt="里親になる" class="selectphoto"></li>
+			<li><img src="images/select_menu2.png.png" alt="募金する" class="selectphoto"></li>
+			<li><img src="images/select_menu3.png.png" alt="物資を送る" class="selectphoto"></li>
+			</ul>
+		</section>
+		<script src="jquery/jquery-3.7.1.min.js"></script>
+		<script>
+			$(function(){
+				$(".selectphoto").on("mouseover",function(){
+					$(this).css("opacity",0.7);
+				});
+				$(".selectphoto").on("mouseout",function(){
+					$(this).css("opacity",1.0);
+				});
+			});
+		</script>
+		
+		<section id="support">
+			<h2><img class="menulogo" src="images/supprt_title.png.png" alt="譲渡時のサポートについて"></h2>
+			<div id="support1">
+				<p>里親になっていただけた方には</p>
+				<p>ペットフードや割引チケットをプレゼント！</p>
+			</div>
+			<div id="support2">
+				<p>動物病院の紹介やしつけのアドバイスなどの</p>
+				<p>サービスもご利用いただけます。</p>
+			</div>
+			<div id="kuwashiku">
+			<a href="#"><img src="images/support_button.png.png" alt="詳しくはこちら"></a>
+			</div>
+			<div id="supportphoto">
+			<img src="images/support.jpg.jpg" alt="飼い主と愛犬の写真">
+			</div>
+		</section>
+		
+		<section id="news">
+			<div id="newstitle">
+			<h2><img class="menulogo" src="images/news_title.png.png" alt="お知らせ"></h2>
+			</div>
+			<div id="newsivent">
+			<dl>
+				<dt class="newstop">2024.12.10<a class="iventtag">イベント</a></dt>
+				<a href="#"><dd class="newstop">「2025 新年の譲渡会」を開催します。</dd></a>
+				<dt>2024.12.01<a class="iventtag">お知らせ</a></dt>
+				<a href="#"><dd>年末年始の営業について</dd></a>
+				<dt>2024.11.23<a class="iventtag">イベント</a></dt>
+				<a href="#"><dd>「里親さん交流会」を開催しました。</dd></a>
+			</dl>
+				<div id="ichiran">
+			<a href="#"><img src="images/news_button.png.png" alt="お知らせ一覧"></a>
+			  </div>
+			</div>
+		</section>
+		
+		<section id="profile">
+		 <div id="profiletitle">
+			<h2><img class="menulogo" src="images/profile_title.png.png" alt="保護中の子たち"></h2>
+		 </div>
+			<div class="slider-container">
+			 <ul id="profilephoto">
+		    <li class="slide"><img src="images/profile_cat1.png" alt=""></li>
+		    <li class="slide"><img src="images/profile_cat2.png" alt=""></li>
+		    <li class="slide"><img src="images/profile_cat3.png" alt=""></li>
+		    <li class="slide"><img src="images/profile_dog2.png" alt=""></li>
+		    <li class="slide"><img src="images/profile_dog3.png" alt=""></li>
+		    <li class="slide"><img src="images/profile_dog4.png" alt=""></li>
+		    <li class="slide"><img src="images/profile_dog5.png" alt=""></li>
+				<li class="slide"><img src="images/profile_dog1.png" alt=""></li>
+		   </ul>
+				
+			
+		 </div>
+		 <div id="morebutton">
+			 <a href="#"><img src="images/profile_button.png.png" alt="もっと見る"></a>
+		 </div>
+		 
+		 <script src="jquery/jquery-3.7.1.min.js"></script>
+     <script src="jquery/bxslider/jquery.bxslider.js"></script>
+		 <script>
+			$(function(){
+			 $('#profilephoto').bxSlider({
+			  mode: 'horizontal',
+      moveSlides: 1,
+      slideMargin: 20,
+      infiniteLoop: true,
+      slideWidth: 200,
+      minSlides: 6,
+      maxSlides: 6,
+		  moveSlides: 1,
+      speed: 800,
+			pause: 5000,
+      auto: true});
+			})
+		 </script>
+			
+	</section>
+	</main>
+	
+	<footer>
+	<p id="footerlogo">命のふるさと</p>
+	
+	<div id="footeraddress">
+	<address>〒123-4567</address>
+	<address>神奈川県横浜市○○区△△町1-2</address>
+	<address>わんにゃんビル◇F</address>
+	<div id="tel">
+	<p id="telaicon"><img src="common/images/footer_tel.png.png" alt="tel"></p>
+	<p>045-123-4567</p>
+	</div>
+	<div id="mail">
+	<p id="mailaicon"><img src="common/images/footer_mail.png.png" alt="mail"></p>
+	<p>inochi-first@wannyan.jp</p>
+	</div>
+	</div>
+	<div id="footersns">
+	<p>OFFICIAL SNS</p>
+	<div id="snsaicon">
+	<p id="youtube"><a href="#"><img src="common/images/footer_youtube.png.png" alt="youtubeaicon"></a></p>
+	<p id="x"><a href="#"><img src="common/images/footer_x.png.png" alt="xaicon"></a></p>
+	<p id="insta"><a href="#"><img src="common/images/footer_insta.png.png" alt="instaaicon"></a></p>
+	</div>
+	</div>
+		<nav class="footermenu">
+    <div class="ftmenu">
+		<h2>タイトル①</h2>
+    <ul>
+    <li><a href="#">コンテンツ１</a></li>
+			<a href="#"><li>コンテンツ２</li></a>
+    <li><a href="#">コンテンツ３</a></li>
+		<a href="#"><li>コンテンツ４</li></a>
+		<a href="#"><li>コンテンツ５</li></a>
+    </ul>
+		</div>
+		<div class="ftmenu">
+		<h2>タイトル②</h2>
+    <ul>
+    <li><a href="#">コンテンツ１</a></li>
+		<a href="#"><li>コンテンツ２</li></a>
+    <li><a href="#">コンテンツ３</a></li>
+		<a href="#"><li>コンテンツ４</li></a>
+		<a href="#"><li>コンテンツ５</li></a>
+    </ul>
+		</div>
+		<div class="ftmenu">
+		<h2>タイトル③</h2>
+    <ul>
+    <li><a href="#">コンテンツ１</a></li>
+			<a href="#"><li>コンテンツ２</li></a>
+    <li><a href="#">コンテンツ３</a></li>
+		<a href="#"><li>コンテンツ４</li></a>
+		<a href="#"><li>コンテンツ５</li></a>
+    </ul>
+		</div>
+		<div class="ftmenu">
+		<h2>タイトル④</h2>
+    <ul>
+    <li><a href="#">コンテンツ１</a></li>
+    <a href="#"><li>コンテンツ２</li></a>
+    <li><a href="#">コンテンツ３</a></li>
+		<a href="#"><li>コンテンツ４</li></a>
+		<a href="#"><li>コンテンツ５</li></a>
+    </ul>
+		</div>
+		</nav>
+		<p id="cr">
+			<small >© 2025 M.RISA</small>
+		</p>
+	</footer>
+</body>
+</html>
